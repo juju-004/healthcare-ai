@@ -5,9 +5,9 @@ const Footer = () => {
     <footer className="footer footer-center p-4 bg-gray-100">
       <aside>
         <p className="text-gray-700">
-          Copyright &copy; 2023 - All right reserved by{" "}
+          Copyright &copy; 2025 - All right reserved by{" "}
           <Link href={"/"} className="hover:underline">
-            HealthCareAI
+            Pneumonia diagnosis
           </Link>
         </p>
       </aside>

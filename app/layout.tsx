@@ -1,8 +1,13 @@
+import CompanyLogos from "@/components/CompanyLogos";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // you can customize weights
+});
 
 export const metadata: Metadata = {
   title: "Healthcare App",
@@ -16,7 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <CompanyLogos />
+        <Footer />
+      </body>
     </html>
   );
 }
